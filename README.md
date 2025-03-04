@@ -1,7 +1,5 @@
 # **GenAI for SD – N-gram Code Completion Lab**
 
-This repository contains the code for the CSCI 420/520 lab “Recommending Code Tokens via N-gram Models” (Spring 2025). The goal is to implement a probabilistic N‑gram language model for Java code completion. The lab involves the following tasks:
-
 1. **Corpus Construction & Preprocessing:**
     - Extract Java methods from GitHub repositories (student data) or use an instructor-provided corpus (teacher data).
     - Preprocess the corpus by removing duplicates, filtering non-ASCII characters, eliminating outlier or boilerplate methods, and tokenizing the Java code.
@@ -10,10 +8,6 @@ This repository contains the code for the CSCI 420/520 lab “Recommending Code 
     - Select the best model based on evaluation set perplexity.
     - Generate code completion predictions for 100 test methods.
     - Save the best model as a pickle file.
-3. **Deliverables:**
-    - A JSON file with predictions for the student model (results_student_model.json) and the teacher model (results_teacher_model.json).
-    - A pickle file (trained_model.pkl) containing the best-performing model.
-    - A 1-page document and a README with instructions.
 
 ## **Repository Files**
 
@@ -66,8 +60,8 @@ venv\\Scripts\\activate
 bash  
 CopyEdit  
 pip install pandas pygments javalang pydriller
-
-1. _Note: If you do not have Git installed on Windows, download and install it from_ [_git-scm.com_](https://git-scm.com/)_. On macOS, Git is typically available via Xcode Command Line Tools._
+**Alternatively, use the included requirements list.
+pip install -r requirements.txt
 
 ## **Generating the Extracted Methods CSV**
 
